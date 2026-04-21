@@ -21,8 +21,8 @@ public class ConectorBD {
         servidor = "localhost";
         puerto = "3306";
         usuario = "dyd";
-        clave = "utilizar";
-        baseDatos = "AutoRecaudos";
+        clave = "******";
+        baseDatos = "*********";
     }
 
     // Método para obtener la conexión
