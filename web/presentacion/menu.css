@@ -1,0 +1,121 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/05/2025, 08:57:32 AM
+    Author     : DELL
+*/
+
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Expand sidebar when clicked */
+.sidebar.expanded {
+    width: 200px;
+}
+
+/* Icon to toggle menu */
+.menu-icon {
+    display: block;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 60px;
+    background-color: #fff;
+}
+
+/* Menu content */
+.menu-content {
+    display: none;
+    flex-direction: column;
+    padding: 4px 0;
+}
+
+.sidebar.expanded .menu-content {
+    display: flex;
+}
+
+.menu-content a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    color: #1a1818;
+    font-size: 30px; /* tamaño de fuente ajustado */
+    text-decoration: none;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+
+.menu-content a:hover {
+    background-color: #34495e;
+    color: white;
+}
+
+
+/* Main content */
+.content {
+    margin-left: 60px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+.sidebar.expanded ~ .content {
+    margin-left: 200px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .sidebar {
+        width: 50px;
+    }
+
+    .sidebar.expanded {
+        width: 180px;
+    }
+
+    .menu-content a {
+        font-size: 14px;
+    }
+
+
+    .sidebar.expanded ~ .content {
+        margin-left: 180px;
+    }
+}
+/* Sidebar (Menú lateral) */
+
+
+/* Mostrar el contenido del menú cuando está expandido */
+.sidebar.expanded {
+    width: 200px;
+}
+
+/* Menu content */
+.menu-content {
+    display: none;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+/* Mostrar el contenido solo cuando se expande */
+.sidebar.expanded .menu-content {
+    display: flex;
+}
+
+/* Contenido principal SIN desplazamiento */
+.content {
+    padding: 20px;
+    margin-left: 60px; /* espacio solo para el icono */
+    transition: margin-left 0.3s;
+}
+
+/* NO mover el contenido cuando el menú está expandido */
+.sidebar.expanded ~ .content {
+    margin-left: 60px; /* mantener igual que sin expandir */
+}

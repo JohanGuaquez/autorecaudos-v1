@@ -1,0 +1,298 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/03/2025, 03:51:50 PM
+    Author     : DELL
+*/
+
+
+    #banner {
+    max-width: 1300px; 
+    margin: 20px auto; 
+    padding: 20px;
+    border-radius: 10px;
+    background: #ccc; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #banner h3 {
+    color: #fff;
+    margin-bottom: 34px;
+    }
+
+    .form-check-label {
+    font-weight: bold;
+    margin-left: 1px;
+    color: #222;
+   }
+
+   .input-group-text {
+    background: #ccc;
+    color: #292929;
+    font-weight: bold;
+   }
+
+   .form-control {
+    border-radius: 5px;
+    border: 1px solid #333;
+  
+    }
+
+    .btn-primary {
+    background: #1e90ff;
+    border: none;
+    font-size: 14px;
+    padding: 7px;
+    border-radius: 5px;
+    transition: 0.3s;
+    }
+
+    .btn-primary:hover {
+    background: #1e90ff;
+    }
+    .pintada {
+    background-color: #ecf0f1 !important; /* Verde claro */
+    }
+
+    .no-pintada {
+    background-color: #fff !important; /* Rojo claro */
+    }
+
+
+
+     button {         
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+    transform: scale(1.05);
+    }
+
+    button:active {
+    background-color: #004099;
+    transform: scale(0.95);
+    }
+  /* Contenedor del menú */
+/* Contenedor del menú */
+.tabla-menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* Ícono ☰ */
+.tabla-menu .menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10; /* Asegura que esté encima */
+    color: #000000;
+}
+
+/* Fondo semitransparente que bloquea la tabla */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Oscurece el fondo */
+    z-index: 50; /* Debe estar sobre la tabla pero debajo del menú */
+}
+
+/* Menú desplegable */
+.tabla-menu .menu-content {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100; /* Se mantiene por encima */
+    right: 0;
+}
+
+/* Estiliza los iconos dentro del menú */
+.tabla-menu .menu-content img {
+    display: block;
+    width: 24px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+
+
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #ccc;
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    border-radius: 8px;
+    overflow: visible;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+table th {
+    background: linear-gradient(#0056b3);
+    color: #fff;
+    font-weight: bold;
+    padding: 12px;
+    border-bottom: 3px solid #000033;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e90ff; /* Fondo blanco */
+    color: #000000; /* Letras negras */
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+
+.h3 {
+    color: #ccc; /* Ajusta el color según tu diseño */
+    font-size: 14px; /* Tamaño de fuente */
+    margin: 5px 0 0 5px; /* Margen superior y separación del icono */
+    display: inline-block; /* Para que quede alineado con la imagen */
+    vertical-align: middle; /* Alinear verticalmente con el icono */
+}
+
+/* Estilo base */
+body {
+    background-color: #fff;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+     position: relative;
+}
+
+/* Estilo general del formulario */
+form {
+    max-width: 1000px;
+    margin: auto;
+    background: #f9f9f9;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Fila principal de filtros */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Columna de filtros de fecha */
+.col-md-5 {
+    flex: 1 1 45%;
+}
+
+/* Checkbox alineado horizontal */
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+/* Estilo para los inputs de fecha */
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group-text {
+    background-color: #ddd;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Input general */
+.form-control {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Columna de botones */
+.col-md-3 {
+    flex: 1 1 25%;
+}
+
+/* Botón principal */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Botón de salir */
+button {
+    margin-top: 10px;
+    background-color: #ff784e; /* Rojo suave */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff784e;
+}
+
+/* Estilo imagen pimovil */
+img {
+    max-width: 100px;
+    height: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* mover logo*/
+
+.logos-derecha {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px; /* Ajusta el tamaño según necesites */
+  height: auto;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
